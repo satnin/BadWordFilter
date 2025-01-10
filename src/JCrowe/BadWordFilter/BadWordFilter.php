@@ -515,14 +515,8 @@ class BadWordFilter
      */
     private function flattenArray($array)
     {
-       	$objTmp = (object)['aFlat' => []];
-        
-        $callBack = function(&$v, $k, &$t) {
-	        $t->aFlat[] = $v;
-        };
-
-        array_walk_recursive($array, $callBack, $objTmp);
-
+        $objTmp = (object)['aFlat' => []];
+        array_walk_recursive($array, function($v) use (&$objTmp){$objTmp->aFlat[] = $v;});
         return $objTmp->aFlat;
     }
 
