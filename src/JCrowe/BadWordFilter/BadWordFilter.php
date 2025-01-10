@@ -247,7 +247,7 @@ class BadWordFilter
      *
      * @return mixed
      */
-    private function cleanArray(array $array = [], $replaceWith)
+    private function cleanArray(array $array, $replaceWith)
     {
         $dirtyKeys = $this->findBadWordsInArray($array);
 
