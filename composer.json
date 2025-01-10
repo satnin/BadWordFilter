@@ -1,11 +1,11 @@
 {
-    "name": "jcrowe/bad-word-filter",
+    "name": "satnin/bad-word-filter",
     "description": "PHP Bad word filtering. Checks for the existence of a bad word in a string or array.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jonathan Crowe",
-            "email": "jcrowe206@gmail.com"
+            "name": "Saturnin Wanonkou",
+            "email": "saturninwanonkou17@gmail.com"
         }
     ],
     "require": {
@@ -25,5 +25,10 @@
             "JCrowe\\BadWordFilter\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
 }
