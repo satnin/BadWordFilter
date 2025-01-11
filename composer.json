@@ -1,5 +1,5 @@
 {
-    "name": "satnin/bad-word-filter",
+    "name": "jcrowe/bad-word-filter",
     "description": "PHP Bad word filtering. Checks for the existence of a bad word in a string or array.",
     "license": "MIT",
     "authors": [
